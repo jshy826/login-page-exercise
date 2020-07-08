@@ -5,29 +5,44 @@
     <title>login page</title>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css"
+        integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous" />
 </head>
 
 <body>
     <div class="entire-box">
+        <div class="mobile-shape"></div>
         <div class="login-screen">
-            <input type="text" placeholder="email" class="login-id" />
-            <input type="password" placeholder="password" class="login-pw" />
-            <a href="#" class="search-pw-link">Forgot Password?</a>
-            <span><input type="checkbox" class="remember-pw" />Remember Me</span>
+            <div class="login-title">
+                <h3>Sign in</h3>
+            </div>
+            <input type="text" placeholder="email" class="input-box login-id" />
+            <input type="password" placeholder="password" class="input-box login-pw" />
+            <a href="#" class="search-pw-link fg-pw">Forgot Password?</a>
+            <span class="remember-pw">
+                <input type="checkbox" class="checkbox-pw" id="check-box" />
+                <label for="check-box"><span class="remember-pw-font">Remember Me</span></label>
+            </span>
             <input type="button" class="login-btn" value="Sign in" />
         </div>
-        <h4>OR</h4>
+
+        <h4 class="select-login">OR</h4>
         <div class="link-sns-btns">
-            <button class="sns-btn facebook-btn">Facebook</button>
-            <button class="sns-btn twitter-btn">Twitter</button>
+            <button class="sns-btn facebook-btn">
+                <i class="fab fa-facebook-square"></i>Facebook
+            </button>
+            <button class="sns-btn twitter-btn">
+                <i class="fab fa-twitter"></i>Twitter
+            </button>
         </div>
 
         <div class="join-member">
             <div class="join-page">
-                need an account?
+                <span>need an account?</span>
                 <a href="#" class="join-link">Sign up</a>
             </div>
             <div class="search-pw-page">
+                <span>forgot your password?</span>
                 <a href="#" class="search-pw-link">Retrive</a>
             </div>
         </div>
